@@ -77,7 +77,7 @@ using namespace std;
 list<int>construct(int n,int c,int m){
     // BASE CASE
     if(n == 1) return list<int>(1,m);
-    if(c-1>=n-2 and c-1=(n*(n-1))/2 - 1){
+    if(c-1>=n-2 and c-1<=(n*(n-1))/2 - 1){
         list<int>arr = construct(n-1,c-1,m+1);
         arr.push_front(m);
         return arr;
